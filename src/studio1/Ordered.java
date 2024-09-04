@@ -3,6 +3,7 @@ package studio1;
 import java.util.Scanner;
 
 public class Ordered {
+boolean isOrdered = true;
 
 	/**
 	 * @param args
@@ -16,6 +17,11 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
-	}
+		boolean isOrdered = (x < y && y < z) || (x > y && y > z);
+	
+	System.out.println(isOrdered);
+		
+	}	
+
 
 }
